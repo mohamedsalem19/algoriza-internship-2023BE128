@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Admin\Commands\AddDoctor\" />
+    <Folder Include="Features\Admin\Commands\DeleteDoctor\" />
+    <Folder Include="Features\Admin\Commands\UpdateDoctor\" />
+    <Folder Include="Features\Admin\Queries\GetAllDoctor\" />
+    <Folder Include="Features\Admin\Queries\GetDoctorById\" />
+    <Folder Include="Features\Doctor\Queries\" />
+    <Folder Include="Features\Patient\Queires\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vezeeta.Core\Vezeeta.Core.csproj" />
+    <ProjectReference Include="..\Vezeeta.Infrastructure\Vezeeta.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
